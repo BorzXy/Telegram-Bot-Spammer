@@ -111,7 +111,6 @@ function spammeg (token, chatid, message) {
             const resultsd = parseJs.result;
             console.log(resultsd.message_id)
             saveing(token, chatid)
-            //console.log("Informasi\nStatus " + statsdsd + "\n")
         }
     }
     
@@ -125,9 +124,7 @@ function spammeg1 (token, chatid, message, SpamAmount) {
         if (response.status == 404) {
             console.log(token + " us" + chatid)
             console.log("Request Gagal, (Reason) invalid token / ChatID");
-            //return MenuUtama("Request Gagal, (Reason) invalid token / ChatID");
         } else {
-            //console.log("Kirim Pesan Berhasil")
             var statsdsd = "";
             if (parseJs.ok == true) {
                 statsdsd = "Berhasil";
@@ -137,9 +134,6 @@ function spammeg1 (token, chatid, message, SpamAmount) {
             const resultsd = parseJs.result;
             console.log("[" + berapa + "] Pesan Terkirim! (Message ID : " + resultsd.message_id +" )")
             saveing(token,chatid)
-            //const resultsd = parseJs.result;
-            //console.log(resultsd.message_id)
-            //console.log("Informasi\nStatus " + statsdsd + "\n")
         }
     }
     setInterval( function () {
