@@ -152,5 +152,5 @@ function spammeg1 (token, chatid, message, SpamAmount) {
         }
         berapa += 1;
         lmaokang1()
-    }, 300);
+    }, 300); //Ganti ini ke 30-50, Jika ingin membuat Bot kena Rate Limit
 }
